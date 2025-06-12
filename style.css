@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Sarabun', sans-serif;
+  background: #fff8f0;
+  color: #3a2e1f;
+  line-height: 1.6;
+}
+
+header {
+  background: #5a3825;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #fff4e3, #ffe1b2);
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #5a3825;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.menu, .franchise, .contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.menu .item {
+  background: #fff;
+  padding: 15px;
+  border: 2px solid #dcb89b;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.franchise-box {
+  background: #fffefb;
+  padding: 20px;
+  border: 1px solid #e0c5a5;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+footer {
+  background: #5a3825;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
