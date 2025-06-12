@@ -10,11 +10,12 @@
 
   <header>
     <div class="logo">เต็งหนึ่ง โรตีชาชัก</div>
-    <nav>
+    <nav id="nav-links">
       <a href="#menu">เมนู</a>
       <a href="#franchise">แฟรนไชส์</a>
       <a href="#contact">ติดต่อเรา</a>
     </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </header>
 
   <section class="hero">
@@ -25,25 +26,35 @@
   <section id="menu" class="menu">
     <h2>เมนูยอดนิยม</h2>
     <div class="menu-grid">
-      <div class="item">โรตีไข่ (25฿)</div>
+      <div class="item">โรตีทะเลาะ (25฿)</div>
       <div class="item">โรตีกล้วย (35฿)</div>
       <div class="item">โรตี+นม (39฿)</div>
-      <div class="item">โรตีโอวัลติน (45฿)</div>
+      <div class="item">โรตีเทเทด (45฿)</div>
     </div>
   </section>
 
-  <section id="franchise" class="franchise">
-    <h2>แพ็กเกจแฟรนไชส์</h2>
-    <div class="franchise-box">
-      <p>✅ ชุดเริ่มต้น 49,000 บาท (พร้อมอุปกรณ์ขาย)</p>
-      <p>✅ ชุดมืออาชีพ 73,000 บาท (เพิ่มเคาน์เตอร์+สื่อโปรโมท)</p>
-      <ul>
-        <li>ลิ้มได้รส ชูเทรนด์</li>
-        <li>สอนฟรี! สูตรลับเฉพาะ</li>
-        <li>บำรุงแบรนด์อย่างมืออาชีพ</li>
-      </ul>
-    </div>
-  </section>
+ <section id="franchise" class="franchise">
+  <h2>แพ็กเกจแฟรนไชส์</h2>
+  <div class="franchise-box">
+    <p>✅ ชุดเริ่มต้น 49,000 บาท (พร้อมอุปกรณ์ขาย)</p>
+    <p>✅ ชุดมืออาชีพ 73,000 บาท (เพิ่มเคาน์เตอร์+สื่อโปรโมท)</p>
+    <ul>
+      <li>ลิ้มได้รส ชูเทรนด์</li>
+      <li>สอนฟรี! สูตรลับเฉพาะ</li>
+      <li>บำรุงแบรนด์อย่างมืออาชีพ</li>
+    </ul>
+  </div>
+
+  <form class="franchise-form" action="https://formspree.io/f/your_form_id" method="POST">
+    <h3>กรอกข้อมูลสมัครแฟรนไชส์</h3>
+    <input type="text" name="name" placeholder="ชื่อ - นามสกุล" required>
+    <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" required>
+    <input type="text" name="province" placeholder="จังหวัดที่ต้องการเปิดร้าน" required>
+    <textarea name="message" placeholder="ข้อมูลเพิ่มเติม เช่น ทำเล พื้นที่ ฯลฯ" rows="4"></textarea>
+    <button type="submit">ส่งข้อมูล</button>
+  </form>
+</section>
+>
 
   <section id="contact" class="contact">
     <h2>ติดต่อเรา</h2>
@@ -56,5 +67,13 @@
     <p>© 2025 เต็งหนึ่ง โรตีชาชัก</p>
   </footer>
 
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>
+
