@@ -3,24 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>เต็งหนึ่ง โรตีชาชัก | แฟรนไชส์โรตีอันดับหนึ่งในไทย</title>
   <meta name="description" content="เต็งหนึ่ง โรตีชาชัก เปิดแฟรนไชส์ทั่วประเทศ โรตีหอมกรอบ ชาชักเข้มข้น พร้อมอุปกรณ์ขายครบในราคาพิเศษ">
-  <meta name="keywords" content="โรตี, ชาชัก, แฟรนไชส์โรตี, แฟรนไชส์ชาชัก, เต็งหนึ่งโรตี, แฟรนไชส์อาหาร, แฟรนไชส์อุดร, roti franchise, roti cha chak">
+  <meta name="keywords" content="โรตี, ชาชัก, แฟรนไชส์โรตี, แฟรนไชส์ชาชัก, เต็งหนึ่งโรตี, แฟรนไชส์อาหาร, roti franchise, franchise thai tea">
   <meta name="author" content="เต็งหนึ่ง โรตีชาชัก">
-
   <meta property="og:title" content="เต็งหนึ่ง โรตีชาชัก - แฟรนไชส์โรตีเจ้าดังทั่วไทย">
   <meta property="og:description" content="เปิดร้านโรตีง่าย ๆ กับเต็งหนึ่ง โรตีชาชัก พร้อมสูตรลับและอุปกรณ์ครบชุด">
   <meta property="og:image" content="https://example.com/roti-cover.jpg">
   <meta property="og:url" content="https://tengroti.com">
   <meta property="og:type" content="website">
-
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Prompt:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <div class="logo">เต็งหนึ่ง โรตีชาชัก</div>
     <nav id="nav-links">
@@ -36,15 +32,32 @@
     <button onclick="location.href='#franchise'">สมัครแฟรนไชส์</button>
   </section>
 
-  <section id="menu" class="menu">
-    <h2>เมนูยอดนิยม</h2>
-    <div class="menu-grid">
-      <div class="item">โรตีไข่ (25฿)</div>
-      <div class="item">โรตีกล้วย (35฿)</div>
-      <div class="item">โรตี+นม (39฿)</div>
-      <div class="item">โรตีโอวัลติน (45฿)</div>
+<section id="menu" class="menu">
+  <h2>เมนูยอดนิยม</h2>
+  <div class="menu-grid">
+    <div class="item-card">
+      <img src="images/roti-egg.jpg" alt="โรตีไข่">
+      <h3>โรตีไข่</h3>
+      <p>25฿</p>
     </div>
-  </section>
+    <div class="item-card">
+      <img src="images/roti-banana.jpg" alt="โรตีกล้วย">
+      <h3>โรตีกล้วย</h3>
+      <p>35฿</p>
+    </div>
+    <div class="item-card">
+      <img src="images/roti-condensed.jpg" alt="โรตีราดนมข้น">
+      <h3>โรตี + นมข้น</h3>
+      <p>39฿</p>
+    </div>
+    <div class="item-card">
+      <img src="images/roti-ovaltine.jpg" alt="โรตีโอวัลติน">
+      <h3>โรตีโอวัลติน</h3>
+      <p>45฿</p>
+    </div>
+  </div>
+</section>
+
 
   <section id="franchise" class="franchise">
     <h2>แพ็กเกจแฟรนไชส์</h2>
@@ -52,14 +65,14 @@
       <p>✅ ชุดเริ่มต้น 49,000 บาท (พร้อมอุปกรณ์ขาย)</p>
       <p>✅ ชุดมืออาชีพ 73,000 บาท (เพิ่มเคาน์เตอร์+สื่อโปรโมท)</p>
       <ul>
-        <li>ลิ้มได้รส ชูเทรนด์</li>
-        <li>สอนฟรี! สูตรลับเฉพาะ</li>
-        <li>บำรุงแบรนด์อย่างมืออาชีพ</li>
+        <li>สูตรลับจากร้านต้นตำรับ</li>
+        <li>อุปกรณ์ครบพร้อมขาย</li>
+        <li>การตลาดและที่ปรึกษาแฟรนไชส์</li>
       </ul>
     </div>
 
     <form class="franchise-form" action="https://formspree.io/f/your_form_id" method="POST">
-      <h3>กรอกข้อมูลสมัครแฟรนไชส์</h3>
+      <h3>สมัครแฟรนไชส์กับเรา</h3>
       <input type="text" name="name" placeholder="ชื่อ - นามสกุล" required>
       <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" required>
       <input type="text" name="province" placeholder="จังหวัดที่ต้องการเปิดร้าน" required>
@@ -85,7 +98,6 @@
       nav.classList.toggle("active");
     }
   </script>
-
 </body>
 </html>
 
