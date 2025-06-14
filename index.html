@@ -1,104 +1,296 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>เต็งหนึ่ง โรตีชาชัก | แฟรนไชส์โรตีอันดับหนึ่งในไทย</title>
-  <meta name="description" content="เต็งหนึ่ง โรตีชาชัก เปิดแฟรนไชส์ทั่วประเทศ โรตีหอมกรอบ ชาชักเข้มข้น พร้อมอุปกรณ์ขายครบในราคาพิเศษ">
-  <meta name="keywords" content="โรตี, ชาชัก, แฟรนไชส์โรตี, แฟรนไชส์ชาชัก, เต็งหนึ่งโรตี, แฟรนไชส์อาหาร, roti franchise, franchise thai tea">
-  <meta name="author" content="เต็งหนึ่ง โรตีชาชัก">
-  <meta property="og:title" content="เต็งหนึ่ง โรตีชาชัก - แฟรนไชส์โรตีเจ้าดังทั่วไทย">
-  <meta property="og:description" content="เปิดร้านโรตีง่าย ๆ กับเต็งหนึ่ง โรตีชาชัก พร้อมสูตรลับและอุปกรณ์ครบชุด">
-  <meta property="og:image" content="https://example.com/roti-cover.jpg">
-  <meta property="og:url" content="https://tengroti.com">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Teng 1 Roti - Authentic Thai Roti & Cha Chak Franchise" data-th="เต็ง 1 โรตี - แฟรนไชส์โรตีและชาชักแท้">Teng 1 Roti - Authentic Thai Roti & Cha Chak Franchise</title>
+    <meta name="description" data-en="Join the Teng 1 Roti franchise family. Authentic Thai crispy roti and traditional cha chak tea. Start your successful franchise business today." data-th="เข้าร่วมครอบครัวแฟรนไชส์เต็ง 1 โรตี โรตีกรอบแท้และชาชักดั้งเดิม เริ่มธุรกิจแฟรนไชส์ที่ประสบความสำเร็จวันนี้" content="Join the Teng 1 Roti franchise family. Authentic Thai crispy roti and traditional cha chak tea. Start your successful franchise business today.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">เต็งหนึ่ง โรตีชาชัก</div>
-    <nav id="nav-links">
-      <a href="#menu">เมนู</a>
-      <a href="#franchise">แฟรนไชส์</a>
-      <a href="#contact">ติดต่อเรา</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 data-en="Teng 1 Roti" data-th="เต็ง 1 โรตี">Teng 1 Roti</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+                <a href="#about" class="nav-link" data-en="About" data-th="เกี่ยวกับเรา">About</a>
+                <a href="#menu" class="nav-link" data-en="Menu" data-th="เมนู">Menu</a>
+                <a href="#franchise" class="nav-link" data-en="Franchise" data-th="แฟรนไชส์">Franchise</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-th="ติดต่อ">Contact</a>
+                <button class="lang-toggle" id="lang-toggle">
+                    <span id="lang-text">TH</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </header>
 
-  <section class="hero">
-    <h1>โรตีเจ้าดัง รสชาติเข้มข้น<br>ชาชักเข้มทุกแก้ว</h1>
-    <button onclick="location.href='#franchise'">สมัครแฟรนไชส์</button>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Authentic Thai Roti & Cha Chak" data-th="โรตีและชาชักแท้ ๆ">Authentic Thai Roti & Cha Chak</h1>
+                <p class="hero-subtitle" data-en="Experience the crispy golden perfection of traditional Thai roti paired with our signature cha chak tea" data-th="สัมผัสความกรอบสีทองแบบดั้งเดิมของโรตีไทย คู่กับชาชักสูตรเด็ด">Experience the crispy golden perfection of traditional Thai roti paired with our signature cha chak tea</p>
+                <div class="hero-buttons">
+                    <a href="#franchise" class="btn btn-primary" data-en="Join Our Franchise" data-th="เข้าร่วมแฟรนไชส์">Join Our Franchise</a>
+                    <a href="#menu" class="btn btn-secondary" data-en="View Menu" data-th="ดูเมนู">View Menu</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://pixabay.com/get/g2d4040effa17832130b3c7c80a8e07bb2f87b574ca7320f08e779d5e77e8aa1b05f2cf60b37824f97cc77a03a3174732f82513c2b82f2e8e09e6ec8a219923f8_1280.jpg" alt="Thai Roti" class="hero-img">
+            </div>
+        </div>
+    </section>
 
-<section id="menu" class="menu">
-  <h2>เมนูยอดนิยม</h2>
-  <div class="menu-grid">
-    <div class="item-card">
-      <img src="images/roti-egg.jpg" alt="โรตีไข่">
-      <h3>โรตีไข่</h3>
-      <p>25฿</p>
-    </div>
-    <div class="item-card">
-      <img src="images/roti-banana.jpg" alt="โรตีกล้วย">
-      <h3>โรตีกล้วย</h3>
-      <p>35฿</p>
-    </div>
-    <div class="item-card">
-      <img src="images/roti-condensed.jpg" alt="โรตีราดนมข้น">
-      <h3>โรตี + นมข้น</h3>
-      <p>39฿</p>
-    </div>
-    <div class="item-card">
-      <img src="images/roti-ovaltine.jpg" alt="โรตีโอวัลติน">
-      <h3>โรตีโอวัลติน</h3>
-      <p>45฿</p>
-    </div>
-  </div>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="About Teng 1 Roti" data-th="เกี่ยวกับเต็ง 1 โรตี">About Teng 1 Roti</h2>
+                <p data-en="Our story of authentic flavors and franchise success" data-th="เรื่องราวของรสชาติแท้และความสำเร็จของแฟรนไชส์">Our story of authentic flavors and franchise success</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-en="A Legacy of Authentic Thai Flavors" data-th="มรดกแห่งรสชาติไทยแท้">A Legacy of Authentic Thai Flavors</h3>
+                    <p data-en="Founded in 2010, Teng 1 Roti began as a small family business with a passion for creating the perfect crispy roti and traditional cha chak tea. Our founder, Mr. Teng, learned the art of roti making from his grandmother, preserving centuries-old techniques that create the distinctive golden, crispy texture our customers love." data-th="ก่อตั้งในปี 2553 เต็ง 1 โรตี เริ่มต้นจากธุรกิจครอบครัวเล็ก ๆ ด้วยความหลงใหลในการสร้างโรตีกรอบที่สมบูรณ์แบบและชาชักดั้งเดิม คุณเต็ง ผู้ก่อตั้ง ได้เรียนรู้ศิลปะการทำโรตีจากคุณยาย โดยรักษาเทคนิคโบราณนับร้อยปีที่สร้างเนื้อสัมผัสสีทองกรอบที่โดดเด่นและเป็นที่รักของลูกค้า">Founded in 2010, Teng 1 Roti began as a small family business with a passion for creating the perfect crispy roti and traditional cha chak tea. Our founder, Mr. Teng, learned the art of roti making from his grandmother, preserving centuries-old techniques that create the distinctive golden, crispy texture our customers love.</p>
+                    <p data-en="Today, we operate over 150 franchise locations across Thailand and Southeast Asia, each maintaining our commitment to quality, authenticity, and exceptional customer service. Our franchise partners become part of the Teng 1 family, supported by comprehensive training, proven business systems, and ongoing operational support." data-th="วันนี้เรามีร้านแฟรนไชส์กว่า 150 สาขาทั่วประเทศไทยและเอเชียตะวันออกเฉียงใต้ แต่ละสาขายังคงรักษาความมุ่งมั่นในคุณภาพ ความแท้จริง และการบริการลูกค้าที่ยอดเยี่ยม พันธมิตรแฟรนไชส์ของเราจะกลายเป็นส่วนหนึ่งของครอบครัวเต็ง 1 ได้รับการสนับสนุนด้วยการฝึกอบรมที่ครอบคลุม ระบบธุรกิจที่พิสูจน์แล้ว และการสนับสนุนการดำเนินงานอย่างต่อเนื่อง">Today, we operate over 150 franchise locations across Thailand and Southeast Asia, each maintaining our commitment to quality, authenticity, and exceptional customer service. Our franchise partners become part of the Teng 1 family, supported by comprehensive training, proven business systems, and ongoing operational support.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://pixabay.com/get/g42edf7e78af7ff363c72cb82eb31e33973eb28ee1a6b1d6a60ae8a269a33ee2d1e6900872cf19c0cf726dba91239a48695ec8c3304861c8acf0faa7411dd50ff_1280.jpg" alt="Thai Restaurant Interior" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Our Signature Menu" data-th="เมนูซิกเนเจอร์ของเรา">Our Signature Menu</h2>
+                <p data-en="Authentic Thai flavors that keep customers coming back" data-th="รสชาติไทยแท้ที่ทำให้ลูกค้ากลับมาอีก">Authentic Thai flavors that keep customers coming back</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://pixabay.com/get/g1aceeccedcfec42bc6e76cae5c6de5ff14d23b9d692c0dbc5da896f1aa2ae9139cb1ce9f6f5e3233f404ae600b9f26af589194cbdad497a6ebff62f632c17a8c_1280.jpg" alt="Crispy Roti">
+                    </div>
+                    <div class="menu-content">
+                        <h3 data-en="Original Crispy Roti" data-th="โรตีกรอบดั้งเดิม">Original Crispy Roti</h3>
+                        <p data-en="Hand-stretched golden roti, crispy on the outside, soft on the inside. Served with curry dipping sauce and sweet condensed milk." data-th="โรตีสีทองขึ้นด้วยมือ กรอบนอกนุ่มใน เสิร์ฟพร้อมน้ำแกงจิ้มและนมข้นหวาน">Hand-stretched golden roti, crispy on the outside, soft on the inside. Served with curry dipping sauce and sweet condensed milk.</p>
+                        <span class="price" data-en="฿35" data-th="35 บาท">฿35</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://pixabay.com/get/g58dcee9f53153ae5f07a74c9429d8b5128316f14e7a095ada594c061ee503948ed9e1365e92c910e6c617c1595d6df5d356b50588483e6539eef1d50b2bbb3d2_1280.jpg" alt="Cha Chak Tea">
+                    </div>
+                    <div class="menu-content">
+                        <h3 data-en="Traditional Cha Chak" data-th="ชาชักดั้งเดิม">Traditional Cha Chak</h3>
+                        <p data-en="Perfectly pulled Thai tea with evaporated milk, creating the signature creamy layers and rich orange color." data-th="ชาไทยชักแบบดั้งเดิมด้วยนมข้นจืด สร้างชั้นครีมที่เป็นเอกลักษณ์และสีส้มเข้ม">Perfectly pulled Thai tea with evaporated milk, creating the signature creamy layers and rich orange color.</p>
+                        <span class="price" data-en="฿25" data-th="25 บาท">฿25</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://pixabay.com/get/g5b8a6daae4fde7c1700d05adf2967780b96326519a412ae8bd0cafcb5f7b62b9764e2ed60b90b30249bad91a501127ffdaaefb9ba326ae228584f7862138664b_1280.jpg" alt="Roti with Banana">
+                    </div>
+                    <div class="menu-content">
+                        <h3 data-en="Roti Banana Special" data-th="โรตีกล้วยพิเศษ">Roti Banana Special</h3>
+                        <p data-en="Sweet crispy roti filled with fresh banana slices, drizzled with condensed milk and sugar." data-th="โรตีกรอบหวานไส้กล้วยสดหั่นชิ้น ราดด้วยนมข้นหวานและน้ำตาล">Sweet crispy roti filled with fresh banana slices, drizzled with condensed milk and sugar.</p>
+                        <span class="price" data-en="฿45" data-th="45 บาท">฿45</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://pixabay.com/get/gc08b6fffcbcf18d7244d032e1b4a76bd4daa71ba6f47af694f3e38c21eb06cb99dea8f19272aa43f3e87d1570b5c1f1bf5bfc4e349e0401dee6a086ea341bcc5_1280.jpg" alt="Matcha Roti">
+                    </div>
+                    <div class="menu-content">
+                        <h3 data-en="Matcha Roti Fusion" data-th="โรตีมัทฉะฟิวชั่น">Matcha Roti Fusion</h3>
+                        <p data-en="Modern twist on classic roti with premium matcha flavor and white chocolate drizzle." data-th="โรตีคลาสสิกแบบใหม่ด้วยรสมัทฉะพรีเมียมและราดช็อกโกแลตขาว">Modern twist on classic roti with premium matcha flavor and white chocolate drizzle.</p>
+                        <span class="price" data-en="฿55" data-th="55 บาท">฿55</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="franchise" class="franchise">
-    <h2>แพ็กเกจแฟรนไชส์</h2>
-    <div class="franchise-box">
-      <p>✅ ชุดเริ่มต้น 49,000 บาท (พร้อมอุปกรณ์ขาย)</p>
-      <p>✅ ชุดมืออาชีพ 73,000 บาท (เพิ่มเคาน์เตอร์+สื่อโปรโมท)</p>
-      <ul>
-        <li>สูตรลับจากร้านต้นตำรับ</li>
-        <li>อุปกรณ์ครบพร้อมขาย</li>
-        <li>การตลาดและที่ปรึกษาแฟรนไชส์</li>
-      </ul>
-    </div>
+    <!-- Franchise Section -->
+    <section id="franchise" class="franchise">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Join Our Franchise Family" data-th="เข้าร่วมครอบครัวแฟรนไชส์ของเรา">Join Our Franchise Family</h2>
+                <p data-en="Start your successful business journey with proven systems and support" data-th="เริ่มต้นการเดินทางธุรกิจที่ประสบความสำเร็จด้วยระบบและการสนับสนุนที่พิสูจน์แล้ว">Start your successful business journey with proven systems and support</p>
+            </div>
+            <div class="franchise-content">
+                <div class="franchise-benefits">
+                    <h3 data-en="Why Choose Teng 1 Roti Franchise?" data-th="ทำไมต้องเลือกแฟรนไชส์เต็ง 1 โรตี?">Why Choose Teng 1 Roti Franchise?</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🏆</div>
+                            <h4 data-en="Proven Success" data-th="ความสำเร็จที่พิสูจน์แล้ว">Proven Success</h4>
+                            <p data-en="Over 150 successful locations with consistent profitability" data-th="มากกว่า 150 สาขาที่ประสบความสำเร็จด้วยผลกำไรที่สม่ำเสมอ">Over 150 successful locations with consistent profitability</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📚</div>
+                            <h4 data-en="Complete Training" data-th="การฝึกอบรมครบถ้วน">Complete Training</h4>
+                            <p data-en="2-week intensive training program covering all operations" data-th="โปรแกรมการฝึกอบรมเข้มข้น 2 สัปดาห์ครอบคลุมการดำเนินงานทั้งหมด">2-week intensive training program covering all operations</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🛠️</div>
+                            <h4 data-en="Ongoing Support" data-th="การสนับสนุนต่อเนื่อง">Ongoing Support</h4>
+                            <p data-en="Marketing, operations, and technical support throughout" data-th="การสนับสนุนด้านการตลาด การดำเนินงาน และเทคนิคตลอดไป">Marketing, operations, and technical support throughout</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💰</div>
+                            <h4 data-en="Low Investment" data-th="การลงทุนต่ำ">Low Investment</h4>
+                            <p data-en="Starting from ฿800,000 total investment package" data-th="เริ่มต้นจากแพ็คเกจการลงทุนรวม 800,000 บาท">Starting from ฿800,000 total investment package</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="franchise-image">
+                    <img src="https://pixabay.com/get/g505e6b68969104da69d4bc898bee58f6836cee7a5e0b41c217682531a9a573618da47ab0d4da0ac0810e14d8e708b8cc2efe97a68f536cb8f1a2a5aec14f51d6_1280.jpg" alt="Franchise Business Meeting">
+                </div>
+            </div>
+            <div class="franchise-process">
+                <h3 data-en="Simple 4-Step Process" data-th="กระบวนการ 4 ขั้นตอนง่าย ๆ">Simple 4-Step Process</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4 data-en="Application" data-th="ใบสมัคร">Application</h4>
+                        <p data-en="Submit your franchise application and initial investment" data-th="ส่งใบสมัครแฟรนไชส์และการลงทุนเริ่มต้น">Submit your franchise application and initial investment</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4 data-en="Training" data-th="การฝึกอบรม">Training</h4>
+                        <p data-en="Complete our comprehensive 2-week training program" data-th="เข้าร่วมโปรแกรมการฝึกอบรมครอบคลุม 2 สัปดาห์">Complete our comprehensive 2-week training program</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4 data-en="Setup" data-th="การติดตั้ง">Setup</h4>
+                        <p data-en="We help set up your location with equipment and supplies" data-th="เราช่วยตั้งค่าสถานที่ของคุณด้วยอุปกรณ์และเครื่องมือ">We help set up your location with equipment and supplies</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4 data-en="Launch" data-th="เปิดตัว">Launch</h4>
+                        <p data-en="Grand opening with marketing support and ongoing assistance" data-th="เปิดใหญ่ด้วยการสนับสนุนการตลาดและความช่วยเหลือต่อเนื่อง">Grand opening with marketing support and ongoing assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <form class="franchise-form" action="https://formspree.io/f/your_form_id" method="POST">
-      <h3>สมัครแฟรนไชส์กับเรา</h3>
-      <input type="text" name="name" placeholder="ชื่อ - นามสกุล" required>
-      <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" required>
-      <input type="text" name="province" placeholder="จังหวัดที่ต้องการเปิดร้าน" required>
-      <textarea name="message" placeholder="ข้อมูลเพิ่มเติม เช่น ทำเล พื้นที่ ฯลฯ" rows="4"></textarea>
-      <button type="submit">ส่งข้อมูล</button>
-    </form>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Get In Touch" data-th="ติดต่อเรา">Get In Touch</h2>
+                <p data-en="Ready to start your franchise journey? Contact us today!" data-th="พร้อมที่จะเริ่มต้นการเดินทางแฟรนไชส์ของคุณหรือยัง? ติดต่อเราวันนี้!">Ready to start your franchise journey? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-en="Contact Information" data-th="ข้อมูลการติดต่อ">Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 data-en="Address" data-th="ที่อยู่">Address</h4>
+                            <p data-en="123 Sukhumvit Road, Bangkok 10110, Thailand" data-th="123 ถนนสุขุมวิท กรุงเทพ 10110 ประเทศไทย">123 Sukhumvit Road, Bangkok 10110, Thailand</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4 data-en="Phone" data-th="โทรศัพท์">Phone</h4>
+                            <p>+66 2 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4 data-en="Email" data-th="อีเมล">Email</h4>
+                            <p>franchise@teng1roti.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4 data-en="Business Hours" data-th="เวลาทำการ">Business Hours</h4>
+                            <p data-en="Mon - Fri: 9:00 AM - 6:00 PM" data-th="จันทร์ - ศุกร์: 9:00 น. - 18:00 น.">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 data-en="Send Us a Message" data-th="ส่งข้อความถึงเรา">Send Us a Message</h3>
+                    <form action="https://formspree.io/f/xanyrkob" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name" data-th="ชื่อ-นามสกุล">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone Number" data-th="หมายเลขโทรศัพท์">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address" data-th="ที่อยู่อีเมล">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest" data-en="Interest Level" data-th="ระดับความสนใจ">Interest Level</label>
+                            <select id="interest" name="interest" required>
+                                <option value="" data-en="Select your interest" data-th="เลือกความสนใจของคุณ">Select your interest</option>
+                                <option value="franchise" data-en="Franchise Opportunity" data-th="โอกาสแฟรนไชส์">Franchise Opportunity</option>
+                                <option value="partnership" data-en="Business Partnership" data-th="หุ้นส่วนทางธุรกิจ">Business Partnership</option>
+                                <option value="supplier" data-en="Supplier Inquiry" data-th="สอบถามซัพพลายเออร์">Supplier Inquiry</option>
+                                <option value="general" data-en="General Information" data-th="ข้อมูลทั่วไป">General Information</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-en="Message" data-th="ข้อความ">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="" data-en-placeholder="Tell us about your interest in Teng 1 Roti franchise..." data-th-placeholder="บอกเราเกี่ยวกับความสนใจของคุณในแฟรนไชส์เต็ง 1 โรตี..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-en="Send Message" data-th="ส่งข้อความ">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>ติดต่อเรา</h2>
-    <p>📞 โทร: 099-xxx-xxxx</p>
-    <p>📱 LINE: @teng1roti</p>
-    <p>📍 สาขาหลัก: อุดรธานี</p>
-  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Teng 1 Roti" data-th="เต็ง 1 โรตี">Teng 1 Roti</h3>
+                    <p data-en="Authentic Thai roti and cha chak franchise. Join our growing family of successful business owners." data-th="แฟรนไชส์โรตีและชาชักไทยแท้ เข้าร่วมครอบครัวที่เติบโตของเจ้าของธุรกิจที่ประสบความสำเร็จ">Authentic Thai roti and cha chak franchise. Join our growing family of successful business owners.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-th="ลิงก์ด่วน">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-en="Home" data-th="หน้าแรก">Home</a></li>
+                        <li><a href="#about" data-en="About" data-th="เกี่ยวกับเรา">About</a></li>
+                        <li><a href="#menu" data-en="Menu" data-th="เมนู">Menu</a></li>
+                        <li><a href="#franchise" data-en="Franchise" data-th="แฟรนไชส์">Franchise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-th="ติดต่อ">Contact</h4>
+                    <p>📍 123 Sukhumvit Road, Bangkok</p>
+                    <p>📞 +66 2 123 4567</p>
+                    <p>📧 franchise@teng1roti.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2025 Teng 1 Roti. All rights reserved." data-th="© 2025 เต็ง 1 โรตี สงวนลิขสิทธิ์">© 2025 Teng 1 Roti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <footer>
-    <p>© 2025 เต็งหนึ่ง โรตีชาชัก</p>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("nav-links");
-      nav.classList.toggle("active");
-    }
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
